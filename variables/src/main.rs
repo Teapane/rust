@@ -41,7 +41,35 @@ fn main() {
     let remainder = 43 % 5;
     println!("The value of remainder is: {}", remainder);
 
+    // booleans
     let t = true;
+    println!("The value of t is: {}", t);
 
     let f: bool = false; // with explicit type annotation
+    println!("The value of f is: {}", f);
+
+    // tuples
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let(tup1, tup2, tup3) = tup;
+    println!("The value of tup1 is: {}", tup1);
+    println!("The value of tup2 is: {}", tup2);
+    println!("The value of tup3 is: {}", tup3);
+
+    // arrays
+    let _array = [1, 2, 3, 4, 5];
+
+    // we can use more than main!
+    another_function();
+
+    another_function_with_args(product);
 }
+
+fn another_function() {
+    println!("Another function.");
+}
+
+fn another_function_with_args(x: i32) {
+    println!("The value of x is: {}", x);
+
+}
+
