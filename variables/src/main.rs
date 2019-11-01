@@ -62,6 +62,8 @@ fn main() {
     another_function();
 
     another_function_with_args(product);
+
+    control_flow();
 }
 
 fn another_function() {
@@ -70,6 +72,15 @@ fn another_function() {
 
 fn another_function_with_args(x: i32) {
     println!("The value of x is: {}", x);
+}
 
+fn control_flow() {
+    let x = 3 ;
+
+    if x < 5 {
+        println!("The condition was false");
+    } else {
+        println!("The condition was true");
+    }
 }
 
