@@ -70,6 +70,7 @@ fn another_function() {
     println!("Another function.");
 }
 
+// type the arg...in this case signed int.
 fn another_function_with_args(x: i32) {
     println!("The value of x is: {}", x);
 }
@@ -79,8 +80,10 @@ fn control_flow() {
 
     if x < 5 {
         println!("The condition was false");
-    } else {
+    } else if x == 3 {
         println!("The condition was true");
+    } else {
+        println!("Not true");
     }
 }
 
